@@ -3,157 +3,280 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Piękny Dom - Usługi budowlane · Żyrardów</title>
-<meta name="description" content="Piękny Dom - usługi budowlane: budowa domów, stany surowe, remonty, wykończenia wnętrz i elewacje. Wycena przed pracą, solidnie i terminowo. Zadzwoń i umów oględziny.">
+<title>Piękny Dom - budowa domów, remonty i wykończenia | Żyrardów</title>
+<meta name="description" content="Piękny Dom - firma budowlana z Żyrardowa. Budowa domów, stany surowe, prace murarskie i tynkarskie, remonty, wykończenia wnętrz oraz elewacje i docieplenia. Wycena i dojazd bez opłat. Zadzwoń: 605 443 826.">
+<meta name="theme-color" content="#0E0F11">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
-<meta name="nb-deploy" content="a3768fd28417">
 </head>
 <body>
 
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="index.html"><span class="name">Piękny Dom</span><span class="sub">Żyrardów</span></a>
-    <nav class="nav-links">
-      <a href="oferta.html">Oferta</a>
-      <a href="realizacje.html">Realizacje</a>
-      <a href="o-nas.html">O nas</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="tel:+48605443826" class="btn btn-accent">Zadzwoń +48 605 443 826</a>
+<div class="progress" id="progress"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="hdr" id="hdr">
+  <div class="topbar">
+    <div class="wrap topbar-in">
+      <div class="tb-left">
+        <a href="tel:+48605443826"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>605 443 826</a>
+        <span class="tb-adr"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6" fill="#0E0F11"/></svg>Generała Władysława Sikorskiego 10, Żyrardów</span>
+      </div>
+      <div class="tb-right">
+        <span class="tb-note">Wycena i dojazd bez opłat</span>
+        <span class="tb-note">Żyrardów i okolice</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 28 24"><path d="M2 12L14 2l12 10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/><path d="M6 13v9h16v-9" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span>
+      <span class="brand-tx"><b>Piękny</b> Dom<i>usługi budowlane · Żyrardów</i></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#top" class="active">Start</a>
+      <a href="#onas">O nas</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#proces">Proces</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="tel:+48605443826" class="btn btn-amber nav-cta">605 443 826</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
+<a id="top"></a>
 
-<section class="hero-fach">
-  <img class="hf-photo" src="img/hero.jpg" alt="Piękny Dom">
-  <div class="hf-panel">
-      <span class="hf-kicker">Usługi ogólnobudowlane</span>
-      <h1 class="hf-title">Solidna budowa i wykończenia pod klucz</h1>
-      <a class="hf-phone" href="tel:+48605443826"><span class="hf-phone-lab">Zadzwoń teraz</span><span class="hf-phone-num"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg> +48 605 443 826</span></a>
-      <div class="hf-actions">
-        <a href="kontakt.html" class="btn btn-accent">Bezpłatna wycena <span class="arr">→</span></a>
-        <a href="tel:+48605443826" class="btn btn-ghost hf-ghost">Zadzwoń +48 605 443 826</a>
-      </div>
-  </div>
-</section>
-<section class="fach-promise">
-  <div class="wrap">
-    <ul class="fp-row reveal"><li>Bezpłatna wycena</li><li>Dojazd: Żyrardów i okolice</li><li>Gwarancja na robociznę</li></ul>
-  </div>
-</section>
-<section class="proces fachowcy">
-  <div class="wrap">
-    <div class="head center reveal">
-      <span class="eyebrow">Jak pracujemy</span>
-      <h2>Wiesz, na czym stoisz - na każdym etapie</h2>
-      <p>Prosty, przewidywalny proces. Bez niespodzianek i bez naciągania.</p>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"><img src="img/hero.jpg" alt="Domy jednorodzinne - realizacja firmy budowlanej Piękny Dom"></div>
+  <div class="hero-ov"></div>
+  <div class="wrap hero-in">
+    <span class="eyebrow fade" data-d="0">Usługi ogólnobudowlane · Żyrardów i okolice</span>
+    <h1 class="fade" data-d="1">Od fundamentu<br><span class="txt-amber">po klucz w drzwiach</span></h1>
+    <p class="hero-sub fade" data-d="2">Budowa domów, stany surowe, remonty, wykończenia wnętrz oraz elewacje. Jeden wykonawca prowadzi całość, więc nie musisz spinać kilku ekip na własną rękę.</p>
+    <div class="hero-btns fade" data-d="3">
+      <a href="#kontakt" class="btn btn-amber btn-lg">Zapytaj o wycenę</a>
+      <a href="tel:+48605443826" class="btn btn-outline btn-lg">Zadzwoń: 605 443 826</a>
     </div>
-    <ol class="proces-line">
-      <li class="reveal"><span class="pno">01</span><h3>Bezpłatna wycena</h3><p>Przyjeżdżamy, oglądamy, doradzamy. Bez opłat i bez zobowiązań.</p></li>
-      <li class="reveal"><span class="pno">02</span><h3>Kosztorys i termin</h3><p>Jasna cena i termin na piśmie - zanim cokolwiek ruszy.</p></li>
-      <li class="reveal"><span class="pno">03</span><h3>Realizacja</h3><p>Robimy zgodnie ze sztuką i na umówiony czas.</p></li>
-      <li class="reveal"><span class="pno">04</span><h3>Odbiór i gwarancja</h3><p>Dajemy gwarancję na robociznę i trzymamy termin.</p></li>
-    </ol>
-  </div>
-</section>
-<section class="gateways-band">
-  <div class="wrap">
-    <div class="gateways">
-      <a href="oferta.html" class="gateway reveal"><img src="img/g1.jpg" alt="Budowa domów" loading="lazy"><span class="g-ttl">Budowa domów</span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/g2.jpg" alt="Stany surowe" loading="lazy"><span class="g-ttl">Stany surowe</span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/g3.jpg" alt="Remonty i modernizacje" loading="lazy"><span class="g-ttl">Remonty i modernizacje</span></a>
+    <div class="hero-trust fade" data-d="4">
+      <span>Wycena i dojazd bez opłat</span>
+      <span>Kosztorys przed startem</span>
+      <span>Gwarancja na robociznę</span>
     </div>
   </div>
+  <a href="#onas" class="scrolldown" aria-label="Przewiń niżej"><span></span></a>
 </section>
-<section class="fach-uslugi">
+
+<!-- ===== PASEK ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track">
+    <span>Budowa domów</span><i></i><span>Stany surowe</span><i></i><span>Prace murarskie i tynkarskie</span><i></i><span>Remonty</span><i></i><span>Wykończenia wnętrz</span><i></i><span>Elewacje i docieplenia</span><i></i>
+    <span>Budowa domów</span><i></i><span>Stany surowe</span><i></i><span>Prace murarskie i tynkarskie</span><i></i><span>Remonty</span><i></i><span>Wykończenia wnętrz</span><i></i><span>Elewacje i docieplenia</span><i></i>
+  </div>
+</div>
+
+<!-- ===== O NAS ===== -->
+<section class="about" id="onas">
+  <div class="wrap about-in">
+    <div class="about-art reveal">
+      <img src="img/about.jpg" alt="Zabudowa jednorodzinna po zakończonych pracach" loading="lazy">
+      <div class="about-tag"><span class="at-n">1</span><span class="at-l">wykonawca<br>na całą budowę</span></div>
+    </div>
+    <div class="about-copy reveal" data-d="1">
+      <span class="eyebrow">O nas</span>
+      <h2>Jedna ekipa <span class="txt-amber">od wykopu po odbiór</span></h2>
+      <p>Piękny Dom to firma budowlana z Żyrardowa. Bierzemy na siebie całą budowę albo wchodzimy na wybrany etap, tam gdzie naprawdę jesteśmy potrzebni.</p>
+      <p>Pracujemy tak, jak sami chcielibyśmy mieć zrobione u siebie: ustalenia na początku, kosztorys przed startem i termin, którego się trzymamy. Bez dopisywania kosztów w trakcie roboty.</p>
+      <ul class="about-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Wycena i dojazd bez opłat</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Kosztorys i termin przed startem</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Stały kontakt w trakcie prac</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Gwarancja na robociznę</li>
+      </ul>
+      <a href="#kontakt" class="btn btn-amber">Porozmawiajmy o Twojej budowie</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LICZBY ===== -->
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat reveal"><div class="stat-n"><span data-count="0">0</span> zł</div><div class="stat-l">Wycena i dojazd</div></div>
+    <div class="stat reveal" data-d="1"><div class="stat-n"><span data-count="1">0</span></div><div class="stat-l">Wykonawca na całość</div></div>
+    <div class="stat reveal" data-d="2"><div class="stat-n"><span data-count="4">0</span></div><div class="stat-l">Etapy współpracy</div></div>
+    <div class="stat reveal" data-d="3"><div class="stat-n"><span data-count="100">0</span>%</div><div class="stat-l">Gwarancja na robociznę</div></div>
+  </div>
+</section>
+
+<!-- ===== USŁUGI ===== -->
+<section class="services" id="uslugi">
   <div class="wrap">
-    <div class="head reveal">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Co robimy</span>
+      <h2>Trzy rzeczy, na których <span class="txt-amber">znamy się najlepiej</span></h2>
+      <p class="sec-lead">Budowa, wykończenie i elewacja. Możesz zlecić nam całość albo tylko ten etap, który Ci został.</p>
+    </div>
+  </div>
+  <div class="wrap cards3">
+    <a href="#kontakt" class="c3 reveal" data-d="0">
+      <div class="c3-img"><img src="img/g10.jpg" alt="Dom jednorodzinny po zakończonej budowie" loading="lazy"></div>
+      <div class="c3-ov"></div>
+      <div class="c3-cap"><span class="c3-t">Budowa domów</span><span class="c3-d">Domy jednorodzinne od ław fundamentowych po pokrycie dachu, według Twojego projektu.</span></div>
+    </a>
+    <a href="#kontakt" class="c3 reveal c3-mid" data-d="1">
+      <div class="c3-img"><img src="img/g5.jpg" alt="Wykończone wnętrze z podłogą drewnianą" loading="lazy"></div>
+      <div class="c3-ov"></div>
+      <div class="c3-cap"><span class="c3-t">Wykończenia wnętrz</span><span class="c3-d">Gładzie, malowanie, podłogi, płytki i łazienki - do stanu, w którym można się wprowadzić.</span></div>
+    </a>
+    <a href="#kontakt" class="c3 reveal" data-d="2">
+      <div class="c3-img"><img src="img/g11.jpg" alt="Elewacja domu po dociepleniu" loading="lazy"></div>
+      <div class="c3-ov"></div>
+      <div class="c3-cap"><span class="c3-t">Elewacje i docieplenia</span><span class="c3-d">Docieplenie ścian, tynk elewacyjny, obróbki blacharskie i cokoły.</span></div>
+    </a>
+  </div>
+
+  <div class="wrap zakres">
+    <div class="sec-head reveal">
       <span class="eyebrow">Zakres prac</span>
-      <h2>W czym pomagamy</h2>
-      <p>Zakres prac, jaki robimy najczęściej - pełny opis i wycenę znajdziesz niżej.</p>
+      <h2>Co bierzemy na siebie</h2>
     </div>
-    <ul class="fu-list">
-      <li class="fu-row reveal"><div class="fu-name">Budowa domów</div><div class="fu-desc">Prowadzimy budowę od fundamentów po stan deweloperski i pod klucz.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Stany surowe</div><div class="fu-desc">Ściany, stropy, dach - solidnie i zgodnie z projektem.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Remonty i modernizacje</div><div class="fu-desc">Przebudowujemy i odświeżamy domy oraz mieszkania, z dbałością o detal.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Wykończenia wnętrz</div><div class="fu-desc">Tynki, gładzie, podłogi, malowanie - kończymy tak, by było gotowe do wprowadzenia.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Elewacje i docieplenia</div><div class="fu-desc">Ocieplamy i wykańczamy elewacje - cieplej w domu i ładniej na zewnątrz.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Prace murarskie i tynkarskie</div><div class="fu-desc">Murujemy i tynkujemy równo, czysto i terminowo.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-    </ul>
-    <div style="margin-top:var(--space-7)" class="reveal"><a href="oferta.html" class="btn btn-ghost">Pełna oferta <span class="arr">→</span></a></div>
-  </div>
-</section>
-<section>
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Realizacje</span>
-      <h2>Zakres prac</h2>
-      <p>Rodzaj prac, które wykonujemy - od stanu surowego po wykończenia.</p>
-    </div>
-    <div class="gallery">
-      <div class="tile t-two3 reveal"><img src="img/g4.jpg" alt="Elewacja i docieplenie" loading="lazy"><div class="cap">Elewacja i docieplenie</div></div>
-      <div class="tile t-third reveal"><img src="img/g5.jpg" alt="Ekipa na budowie" loading="lazy"><div class="cap">Ekipa na budowie</div></div>
-      <div class="tile t-third reveal"><img src="img/g6.jpg" alt="Gotowy etap prac" loading="lazy"><div class="cap">Gotowy etap prac</div></div>
-      <div class="tile t-third reveal"><img src="img/g7.jpg" alt="Piękny Dom" loading="lazy"></div>
-      <div class="tile t-third reveal"><img src="img/g8.jpg" alt="Piękny Dom" loading="lazy"></div>
-    </div>
-    <div style="margin-top:var(--space-7)" class="reveal"><a href="realizacje.html" class="btn btn-accent">Pełna galeria <span class="arr">→</span></a></div>
-  </div>
-</section>
-<section class="obszar">
-  <div class="wrap">
-    <div class="head center reveal">
-      <span class="eyebrow">Obszar działania</span>
-      <h2>Dojeżdżamy do Ciebie</h2>
-    </div>
-    <ul class="obszar-list reveal"><li class="is-home">Żyrardów</li><li>+ okolice</li></ul>
-  </div>
-</section>
-<section class="cta">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Współpraca</span>
-      <h2>Potrzebujesz fachowca? Wycenimy za darmo.</h2>
-      <p>Zadzwoń lub napisz - przyjedziemy, obejrzymy i podamy jasną cenę. Bez zobowiązań.</p>
-    </div>
-    <div class="cta-actions reveal">
-      <a href="kontakt.html" class="btn btn-light">Bezpłatna wycena <span class="arr">→</span></a>
-      <a href="tel:+48605443826" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3)">+48 605 443 826</a>
+    <div class="zak-grid">
+      <article class="zak reveal"><span class="zak-n">01</span><h3>Budowa domów</h3><p>Stawiamy domy jednorodzinne od ław fundamentowych po pokrycie dachu, zgodnie z projektem i sztuką budowlaną.</p></article>
+      <article class="zak reveal" data-d="1"><span class="zak-n">02</span><h3>Stany surowe</h3><p>Ściany, stropy i więźba doprowadzone do stanu surowego otwartego albo zamkniętego, z oknami i drzwiami.</p></article>
+      <article class="zak reveal" data-d="2"><span class="zak-n">03</span><h3>Murarka i tynki</h3><p>Murowanie ścian, tynki maszynowe i ręczne, wylewki oraz zabudowy z płyt gipsowo-kartonowych.</p></article>
+      <article class="zak reveal"><span class="zak-n">04</span><h3>Remonty i modernizacje</h3><p>Przebudowy domów i mieszkań: wyburzenia, nowe ściany działowe, instalacje, podłogi i sufity.</p></article>
+      <article class="zak reveal" data-d="1"><span class="zak-n">05</span><h3>Wykończenia wnętrz</h3><p>Gładzie, malowanie, panele, płytki i łazienki. Prowadzimy prace do końca, bez zostawiania drobiazgów na później.</p></article>
+      <article class="zak reveal" data-d="2"><span class="zak-n">06</span><h3>Elewacje i docieplenia</h3><p>Styropian albo wełna, siatka, tynk cienkowarstwowy, cokoły i obróbki wykończeniowe.</p></article>
     </div>
   </div>
 </section>
 
-<footer>
+<!-- ===== PROCES ===== -->
+<section class="proces" id="proces">
+  <div class="proces-bg" data-parallax><img src="img/g6.jpg" alt="" loading="lazy"></div>
+  <div class="proces-ov"></div>
+  <div class="wrap proces-in">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Jak pracujemy</span>
+      <h2>Wiesz, na czym stoisz<br><span class="txt-amber">na każdym etapie</span></h2>
+      <p class="sec-lead">Cztery kroki i żadnych niespodzianek w połowie roboty. Cena oraz termin są ustalone, zanim wejdziemy na plac.</p>
+    </div>
+    <div class="phases">
+      <div class="phase reveal" data-d="0"><span class="phase-k">Krok 01</span><h3>Oględziny i wycena</h3><p>Przyjeżdżamy, oglądamy zakres i mówimy wprost, co da się zrobić oraz w jakiej kolejności. Bez opłat i bez zobowiązań.</p></div>
+      <div class="phase reveal" data-d="1"><span class="phase-k">Krok 02</span><h3>Kosztorys i termin</h3><p>Dostajesz rozpisany kosztorys i datę startu. Cena obowiązuje na ustalony zakres, a zmiany potwierdzamy wcześniej.</p></div>
+      <div class="phase reveal" data-d="2"><span class="phase-k">Krok 03</span><h3>Realizacja</h3><p>Pracujemy etapami i jesteśmy w stałym kontakcie. Zdjęcia z placu wysyłamy też wtedy, gdy nie możesz wpaść na budowę.</p></div>
+      <div class="phase reveal" data-d="3"><span class="phase-k">Krok 04</span><h3>Odbiór i gwarancja</h3><p>Przechodzimy z Tobą całość, poprawiamy drobiazgi od razu i dajemy gwarancję na robociznę.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REALIZACJE ===== -->
+<section class="portfolio" id="realizacje">
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <div class="name">Piękny Dom</div>
-        <p>Usługi budowlane - Żyrardów i okolice. Budowa domów, remonty i wykończenia. Jeden wykonawca od stanu surowego po gotowe wnętrze.</p>
-      </div>
-      <div class="foot-col">
-        <h4>Nawigacja</h4>
-        <a href="oferta.html">Oferta</a>
-        <a href="realizacje.html">Realizacje</a>
-        <a href="o-nas.html">O nas</a>
-        <a href="kontakt.html">Kontakt</a>
-      </div>
-      <div class="foot-col">
-        <h4>Kontakt</h4>
-        <a href="tel:+48605443826">+48 605 443 826</a>
-        <p>Generała Władysława Sikorskiego 10, 96-300 Żyrardów</p>
-        <a href="https://maps.google.com/?cid=14699291372829983977" target="_blank" rel="noopener">Jak dojechać →</a>
-      </div>
+    <div class="sec-head reveal">
+      <span class="eyebrow">Realizacje</span>
+      <h2>Budowy, remonty i <span class="txt-amber">gotowe efekty</span></h2>
+      <p class="sec-lead">Przekrój prac, jakie prowadzimy: od stanu surowego, przez elewacje, po wykończone wnętrza.</p>
     </div>
-    <div class="foot-bot">
-      <span>© 2026 Piękny Dom</span>
-      <span>Projekt strony: Krzysztof Brzeziński</span>
+    <div class="pf-filter reveal" id="pfFilter">
+      <button class="on" data-f="all">Wszystkie</button>
+      <button data-f="domy">Domy</button>
+      <button data-f="surowe">Stan surowy</button>
+      <button data-f="wykonczenia">Wykończenia</button>
     </div>
+    <div class="pf-grid" id="pfGrid">
+      <figure class="pf pf-big" data-cat="domy"><img src="img/g12.jpg" alt="Dom z zadaszonym tarasem po zakończonych pracach" loading="lazy"><figcaption><span class="pf-t">Dom z zadaszonym tarasem</span><span class="pf-d">Po odbiorze, przed zagospodarowaniem terenu</span></figcaption></figure>
+      <figure class="pf" data-cat="surowe"><img src="img/g1.jpg" alt="Stan surowy otwarty - konstrukcja i dach" loading="lazy"><figcaption><span class="pf-t">Stan surowy otwarty</span><span class="pf-d">Konstrukcja i pokrycie dachu</span></figcaption></figure>
+      <figure class="pf" data-cat="surowe"><img src="img/g2.jpg" alt="Dom parterowy ze świeżym tynkiem elewacyjnym" loading="lazy"><figcaption><span class="pf-t">Dom parterowy</span><span class="pf-d">Świeży tynk elewacyjny</span></figcaption></figure>
+      <figure class="pf" data-cat="domy"><img src="img/g7.jpg" alt="Rozbudowa domu - nowa część w szkle i drewnie" loading="lazy"><figcaption><span class="pf-t">Rozbudowa domu</span><span class="pf-d">Nowa część dostawiona do starej bryły</span></figcaption></figure>
+      <figure class="pf" data-cat="surowe"><img src="img/g3.jpg" alt="Bryła domu w budowie ze stolarką do montażu" loading="lazy"><figcaption><span class="pf-t">Bryła w budowie</span><span class="pf-d">Otwory gotowe pod stolarkę</span></figcaption></figure>
+      <figure class="pf pf-big" data-cat="wykonczenia"><img src="img/g14.jpg" alt="Gładzie i przygotowanie ścian pod malowanie" loading="lazy"><figcaption><span class="pf-t">Gładzie i przygotowanie ścian</span><span class="pf-d">Etap przed malowaniem wnętrza</span></figcaption></figure>
+      <figure class="pf" data-cat="surowe"><img src="img/g4.jpg" alt="Rozbudowa domu w konstrukcji drewnianej" loading="lazy"><figcaption><span class="pf-t">Prace ciesielskie</span><span class="pf-d">Rozbudowa w konstrukcji drewnianej</span></figcaption></figure>
+      <figure class="pf" data-cat="wykonczenia"><img src="img/g8.jpg" alt="Detal muru licowego z cegły" loading="lazy"><figcaption><span class="pf-t">Mur licowy</span><span class="pf-d">Detal murarski, spoina równa na całej ścianie</span></figcaption></figure>
+      <figure class="pf" data-cat="domy"><img src="img/g9.jpg" alt="Detal elewacji z drewna, szkła i betonu" loading="lazy"><figcaption><span class="pf-t">Detal elewacji</span><span class="pf-d">Drewno, szkło i beton architektoniczny</span></figcaption></figure>
+      <figure class="pf" data-cat="surowe"><img src="img/g13.jpg" alt="Rusztowanie i dźwig na budowie" loading="lazy"><figcaption><span class="pf-t">Prace na wysokości</span><span class="pf-d">Rusztowania i sprzęt na placu budowy</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OPINIE ===== -->
+<section class="opinie" id="opinie">
+  <div class="wrap">
+    <div class="op-head reveal">
+      <span class="quote-mark" aria-hidden="true">&#8220;</span>
+      <span class="eyebrow">Co mówią klienci</span>
+      <h2>Opinie z okolic Żyrardowa</h2>
+    </div>
+    <div class="op-track" id="opTrack">
+      <blockquote class="op is-active"><div class="op-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg></div><p>Ekipa weszła w umówionym terminie i doprowadziła dom do stanu surowego bez poślizgu. Kosztorys zgadzał się z tym, co ustaliliśmy na starcie.</p><cite>Klientka z Żyrardowa</cite></blockquote>
+      <blockquote class="op"><div class="op-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg></div><p>Robili u nas remont mieszkania od instalacji po malowanie. Codzienny kontakt, a każdą zmianę w zakresie ustalali z nami wcześniej.</p><cite>Klient z okolic Żyrardowa</cite></blockquote>
+      <blockquote class="op"><div class="op-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.8 7 .7-5.3 4.7 1.6 7-6.3-3.8L5.7 21l1.6-7L2 9.5l7-.7z"/></svg></div><p>Docieplenie i elewacja wyszły równo, a cena nie urosła po drodze. Termin też się zgadzał, więc polecam dalej znajomym.</p><cite>Inwestor spod Żyrardowa</cite></blockquote>
+    </div>
+    <div class="op-dots" id="opDots"></div>
+    <p class="op-note">Tu wstawimy prawdziwe opinie z wizytówki Google, gdy tylko podepniemy ją do strony.</p>
+  </div>
+</section>
+
+<!-- ===== KONTAKT ===== -->
+<section class="cta" id="kontakt">
+  <div class="wrap cta-in">
+    <div class="cta-copy reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Powiedz, co trzeba zrobić<br><span class="txt-amber">a my podamy cenę</span></h2>
+      <p>Zadzwoń i opisz zakres prac. Umówimy oględziny w dogodnym terminie, obejrzymy budowę na miejscu i przygotujemy kosztorys. Bez opłat i bez zobowiązań.</p>
+      <div class="cta-btns">
+        <a href="tel:+48605443826" class="btn btn-amber btn-lg">Zadzwoń: 605 443 826</a>
+        <a href="sms:+48605443826" class="btn btn-outline btn-lg">Napisz SMS</a>
+      </div>
+      <ul class="ct-list">
+        <li><span>Telefon</span><a href="tel:+48605443826">+48 605 443 826</a></li>
+        <li><span>Adres</span>Generała Władysława Sikorskiego 10, 96-300 Żyrardów</li>
+        <li><span>Teren pracy</span>Żyrardów i okolice</li>
+      </ul>
+    </div>
+    <div class="cta-map reveal" data-d="1">
+      <iframe title="Mapa - Piękny Dom, Żyrardów" src="https://www.google.com/maps?q=Genera%C5%82a%20W%C5%82adys%C5%82awa%20Sikorskiego%2010%2C%2096-300%20%C5%BByrard%C3%B3w&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STOPKA ===== -->
+<footer class="footer">
+  <div class="wrap foot-top reveal">
+    <h2>Budowa, remont albo samo wykończenie<br><span class="txt-amber">jedna ekipa na całość</span></h2>
+  </div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 28 24"><path d="M2 12L14 2l12 10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/><path d="M6 13v9h16v-9" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span>
+        <span class="brand-tx"><b>Piękny</b> Dom<i>usługi budowlane · Żyrardów</i></span>
+      </a>
+      <p>Firma budowlana z Żyrardowa. Budowa domów, stany surowe, remonty, wykończenia wnętrz oraz elewacje i docieplenia. Pracujemy w Żyrardowie i okolicznych gminach.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Nawigacja</h4>
+      <a href="#onas">O nas</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#proces">Proces</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="foot-col">
+      <h4>Kontakt</h4>
+      <a href="tel:+48605443826">+48 605 443 826</a>
+      <span>Generała Władysława Sikorskiego 10</span>
+      <span>96-300 Żyrardów</span>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>© 2026 Piękny Dom · Żyrardów</span>
+    <span>Projekt strony: Krzysztof Brzeziński</span>
   </div>
 </footer>
-<div class="sticky-call"><a class="sc-call" href="tel:+48605443826"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg> Zadzwoń</a><a class="sc-quote" href="kontakt.html">Bezpłatna wycena</a></div>
+
+<a href="tel:+48605443826" class="fab" aria-label="Zadzwoń"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg></a>
 
 <script src="assets/main.js"></script>
 </body>
